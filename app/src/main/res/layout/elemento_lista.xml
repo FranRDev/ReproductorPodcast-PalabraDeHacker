@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imagen_podcast"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/nombre_podcast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imagen_podcast"
+        android:paddingLeft="5dp"
+        android:text="@string/nombre_podcast"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/duracion_podcast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nombre_podcast"
+        android:layout_toRightOf="@+id/imagen_podcast"
+        android:text="@string/duracion"
+        android:textSize="15dp"
+        android:paddingLeft="5dp"/>
+    <TextView
+        android:id="@+id/fecha_podcast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/duracion_podcast"
+        android:layout_toRightOf="@+id/imagen_podcast"
+        android:text="@string/fecha"
+        android:textSize="15dp"
+        android:paddingLeft="5dp"/>
+
+</RelativeLayout>
